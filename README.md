@@ -2,4 +2,14 @@
 
 ![terminal](img/terminal.png)
 
-Terminal is a hugo based API for recording/discovery of system components.
+Terminal is an API for capturing select information about distributed system components.
+
+## Component Data Schema
+
+WIP
+
+## API Endpoints
+
+WIP
+
+## Example API Calls
