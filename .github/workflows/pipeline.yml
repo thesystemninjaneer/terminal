@@ -9,6 +9,7 @@ env:
   BASE_URL: "https://${GITHUB_ACTOR}.github.io"
 jobs:
   publish:
+    runs-on: ubuntu-latest
     container: fedora:latest
     steps:
     - uses: actions/checkout@v2
