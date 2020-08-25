@@ -18,4 +18,4 @@ jobs:
         echo $BASE_URL $GITHUB_ACTOR
         dnf install -y hugo
         cd terminalGetApi
-        hugo --destination ".." --baseURL https://$GITHUB_ACTOR.github.io
+        hugo --destination ".." --baseURL https://$GITHUB_ACTOR.github.io/terminal
