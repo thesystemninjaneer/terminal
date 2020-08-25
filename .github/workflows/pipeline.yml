@@ -2,8 +2,9 @@
 name: build
 on:
   push:
-  branches:
-    - master
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
 env:
   IMAGE_NAME: fedora
   BASE_URL: "https://${GITHUB_ACTOR}.github.io"
