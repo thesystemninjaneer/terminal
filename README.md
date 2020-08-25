@@ -25,7 +25,7 @@ Generic commands used to initially test using hugo for an API SSG based on this 
 
 ```
 $ hugo new site terminalGetApi                         #create a new hugo site
-$ vim terminalGetApi/layouts/config.toml               #set json as the format for hugo to output all rendered content
+$ vim terminalGetApi/config.toml               #set json as the format for hugo to output all rendered content
 $ mkdir terminalGetApi/layouts/_default                #
 $ vim terminalGetApi/layouts/_default/baseof.json      #starting point for all pages to output a data response
 $ vim terminalGetApi/layouts/_default/item.json.json   #template of attributes for a single item

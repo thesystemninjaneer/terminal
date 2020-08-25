@@ -1,0 +1,11 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Terminal API"
+[taxonomies]
+software = "software"
+[outputs]
+    page = ["HTML", "json"] # A component
+    section = ["HTML", "RSS", "json"] # All components
+    home = ["HTML", "RSS", "json"] # Everything
+    taxonomy = ["HTML", "RSS", "json"] # All items from a software type
+
