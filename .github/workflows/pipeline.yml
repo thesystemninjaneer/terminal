@@ -6,11 +6,11 @@ on:
   pull_request:
     branches: [ master ]
 env:
-  IMAGE_NAME: fedora
+  IMAGE_NAME: fedora:latest
   BASE_URL: "https://${GITHUB_ACTOR}.github.io"
 jobs:
-  build:
-    runs-on: ${IMAGE_NAME}
+  publish:
+    container: ${IMAGE_NAME}
     steps:
     - uses: actions/checkout@v2
     - name: hugo build
