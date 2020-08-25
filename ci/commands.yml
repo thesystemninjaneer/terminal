@@ -1,0 +1,15 @@
+name: build
+on:
+  push:
+  branches:
+    - master
+env:
+  IMAGE_NAME: fedora
+  BASE_URL: "https://${GITHUB_ACTOR}.github.io"
+jobs:
+  build:
+    - name: hugo build
+    run: |
+      dnf install -y hugo
+      cd terminalGetApi
+      hugo --destination ".." --baseURL ${BASE_URL}
