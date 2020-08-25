@@ -8,7 +8,7 @@ on:
 env:
   BASE_URL: "https://${GITHUB_ACTOR}.github.io"
 jobs:
-  publish:
+  publish-api:
     runs-on: ubuntu-latest
     container: fedora:latest
     steps:
