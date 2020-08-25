@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+[taxonomies]
+sport = "sports"
+[outputs]
+    page = ["HTML", "json"] # A player
+    section = ["HTML", "RSS", "json"] # All players
+    home = ["HTML", "RSS", "json"] # Everything
+    taxonomy = ["HTML", "RSS", "json"] # All items from a sport

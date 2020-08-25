@@ -1,0 +1,5 @@
+{
+    "title": "{{ .Title }}",
+    "mascot": "{{ .Params.mascot }}",
+    "permalink": "{{ .Permalink }}"
+}
