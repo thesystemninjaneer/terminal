@@ -19,7 +19,7 @@ sudo dnf install hugo
 ```
 ### Build Project
 
-Generic commands used to initially test using hugo for an API SSG based on this [tutorial](https://forestry.io/blog/build-a-json-api-with-hugo/).
+Generic commands used to initially test using hugo for an API SSG based on this [tutorial](https://forestry.io/blog/build-a-json-api-with-hugo/) (see learnhugo branch for content).
 
 <details>
 
