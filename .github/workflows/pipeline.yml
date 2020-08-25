@@ -1,3 +1,4 @@
+#based on https://github.com/actions/starter-workflows/blob/af51c4b131dbf613bdf369873b9575612522433b/ci/blank.yml
 name: build
 on:
   push:
@@ -8,8 +9,11 @@ env:
   BASE_URL: "https://${GITHUB_ACTOR}.github.io"
 jobs:
   build:
+    runs-on: ${IMAGE_NAME}
+    steps:
+    - uses: actions/checkout@v2
     - name: hugo build
-    run: |
-      dnf install -y hugo
-      cd terminalGetApi
-      hugo --destination ".." --baseURL ${BASE_URL}
+      run: |
+        dnf install -y hugo
+        cd terminalGetApi
+        hugo --destination ".." --baseURL ${BASE_URL}
