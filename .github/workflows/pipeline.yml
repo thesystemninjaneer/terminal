@@ -16,7 +16,7 @@ jobs:
     - name: hugo build
       run: |
         echo $BASE_URL $GITHUB_ACTOR
-        dnf install -y hugo
+        dnf install -y hugo git
         cd terminalGetApi
         hugo --destination ".." --baseURL https://$GITHUB_ACTOR.github.io/terminal
         git add .
