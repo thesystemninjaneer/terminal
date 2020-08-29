@@ -28,6 +28,7 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: pages
+        path: ./docs
     - name: commit
       run: |
         ls -R
