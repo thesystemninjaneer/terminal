@@ -33,12 +33,14 @@ jobs:
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
     - uses: actions/download-artifact@v2
+      with:
+        name: pages
+        path: docs
+    - uses: actions/checkout@v2
+    - name: git setup
       run: |
         ls -l
         git add docs
         git commit -m "gh actions auto commit of pages build"
         git push
-      with:
-        name: pages
-        path: docs
 
