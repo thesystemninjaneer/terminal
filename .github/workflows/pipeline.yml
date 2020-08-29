@@ -16,14 +16,12 @@ jobs:
         dnf install -y hugo git
         cd terminalGetApi
         hugo --destination "../docs" --baseURL https://$GITHUB_ACTOR.github.io/terminal
-        date > generated.txt
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
         git commit -m "gh actions auto commit of pages build"
         git push
     - uses: actions/upload-artifact@v2
-      #- name: archive hugo artifact
       with:
         name: pages
         path: docs
