@@ -1,0 +1,24 @@
+{
+    "data" : 
+    {
+        
+        
+            "taxonomy" : "software",
+            "term" : "processor",
+        
+        "count" : "1"
+        ,"items" : [
+        
+            {
+    "title": "Component D",
+    "date": "2020-01-01 00:00:00 +0000 UTC",
+    "type": "components",
+    "permalink" : "https://thesystemninjaneer.github.io/terminal/components/component-d/",
+    "summary" : "Best Component in the world!"
+}
+
+        
+        ]
+    }
+
+}

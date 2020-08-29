@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal API</title>
+    <link>https://thesystemninjaneer.github.io/terminal/</link>
+    <description>Recent content on Terminal API</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://thesystemninjaneer.github.io/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Component D</title>
+      <link>https://thesystemninjaneer.github.io/terminal/components/component-d/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://thesystemninjaneer.github.io/terminal/components/component-d/</guid>
+      <description>Best Component in the world!</description>
+    </item>
+    
+    <item>
+      <title>Component B</title>
+      <link>https://thesystemninjaneer.github.io/terminal/components/component-b/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://thesystemninjaneer.github.io/terminal/components/component-b/</guid>
+      <description>B is the best Component in the world!</description>
+    </item>
+    
+    <item>
+      <title>Component A</title>
+      <link>https://thesystemninjaneer.github.io/terminal/components/component-a/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://thesystemninjaneer.github.io/terminal/components/component-a/</guid>
+      <description>Best Component in the world!</description>
+    </item>
+    
+    <item>
+      <title>Component C</title>
+      <link>https://thesystemninjaneer.github.io/terminal/components/component-c/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://thesystemninjaneer.github.io/terminal/components/component-c/</guid>
+      <description>C is the best Component in the world!</description>
+    </item>
+    
+    <item>
+      <title>Application A</title>
+      <link>https://thesystemninjaneer.github.io/terminal/apps/app-a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thesystemninjaneer.github.io/terminal/apps/app-a/</guid>
+      <description>Application A does X to data Y for Application B</description>
+    </item>
+    
+  </channel>
+</rss>
