@@ -25,6 +25,7 @@ jobs:
     needs: build-api
     steps:
     - uses: actions/checkout@v2
+      needs: build-api
     - uses: actions/download-artifact@v2
       with:
         name: docs
