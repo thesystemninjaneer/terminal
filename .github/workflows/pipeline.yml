@@ -19,8 +19,7 @@ jobs:
         dnf install -y hugo git
         cd terminalGetApi
         hugo --destination "../docs" --baseURL https://$GITHUB_ACTOR.github.io/terminal
-        cd ..
-        ls -lrt *
-        git add ./docs
-        git commit -m "automated GH actions triggered by new content"
-        git push
+     - uses: actions/upload-artifact@v2
+       with:
+         name: pages
+         path: docs
