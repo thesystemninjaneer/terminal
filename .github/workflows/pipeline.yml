@@ -18,7 +18,7 @@ jobs:
         hugo --destination "../docs" --baseURL https://$GITHUB_ACTOR.github.io/terminal
     - uses: actions/checkout@v2
     - name: commit hugo build
-    - run: |
+      run: |
         date > generated.txt
         git config user.name github-actions
         git config user.email github-actions@github.com
@@ -26,6 +26,7 @@ jobs:
         git commit -m "gh actions auto commit of pages build"
         git push
     - uses: actions/upload-artifact@v2
+    - name: archive hugo artifact
       with:
         name: pages
         path: docs
