@@ -36,8 +36,8 @@ jobs:
       with:
         name: pages
         path: docs
-    - uses: actions/checkout@v2
-    - name: git commit
+          #- uses: actions/checkout@v2
+          #- name: git commit
       run: |
         ls -l
         git add docs
