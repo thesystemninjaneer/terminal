@@ -8,4 +8,5 @@ software = "software"
     section = ["HTML", "RSS", "json"] # All components
     home = ["HTML", "RSS", "json"] # Everything
     taxonomy = ["HTML", "RSS", "json"] # All items from a software type
-
+[permalinks]
+  page = "/:section/:title/"
