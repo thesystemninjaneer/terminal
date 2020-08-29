@@ -19,7 +19,7 @@ jobs:
         dnf install -y hugo git
         cd terminalGetApi
         hugo --destination "../docs" --baseURL https://$GITHUB_ACTOR.github.io/terminal
-     - uses: actions/upload-artifact@v2
-       with:
-         name: pages
-         path: docs
+    - uses: actions/upload-artifact@v2
+      with:
+        name: pages
+        path: docs
