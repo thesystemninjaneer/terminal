@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
 jobs:
-  publish-api:
+  build-api:
     runs-on: ubuntu-latest
     container: fedora:latest
     steps:
@@ -16,17 +16,30 @@ jobs:
         dnf install -y hugo git
         cd terminalGetApi
         hugo --destination "../docs" --baseURL https://$GITHUB_ACTOR.github.io/terminal
-    - name: commit hugo build
+    - uses: actions/upload-artifact@v2
+      with:
+        name: pages
+        path: docs
+  publish-api:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: git setup
       run: |
         pwd
         ls -al
         git remote -v
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add docs
-        git commit -m "gh actions auto commit of pages build"
-        git push
-    - uses: actions/upload-artifact@v2
+    - uses: actions/download-artifact@v2
       with:
         name: pages
         path: docs
+    - uses: actions/checkout@v2
+    - name: git commit
+      run: |
+        ls -l
+        git add docs
+        git commit -m "gh actions auto commit of pages build"
+        git push
+
