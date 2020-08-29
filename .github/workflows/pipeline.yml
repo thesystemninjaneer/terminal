@@ -26,7 +26,6 @@ jobs:
         git commit -m "gh actions auto commit of pages build"
         git push
     - uses: actions/upload-artifact@v2
-    - name: save pages artifact
       with:
         name: pages
         path: docs
