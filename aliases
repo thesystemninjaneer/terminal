@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 # Source this file from ~/.bashrc. Ex: "source /path/to/this/repo/aliases"
 #
 alias terminaldevbuild="echo 'Building Dev Fedora container'; \
