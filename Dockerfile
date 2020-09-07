@@ -9,7 +9,7 @@ LABEL maintainer="thesystemninjaneer@gmail.com"
 ARG SITE_NAME=terminalGetApi
 ENV HUGO_VERSION 0.69.0
 
-RUN dnf install -y hugo-$HUGO_VERSION && \
+RUN dnf install -y --disablerepo=* --enablerepo=fedora --enablerepo=updates hugo-$HUGO_VERSION && \
     dnf clean all
 
 COPY . /repo/
