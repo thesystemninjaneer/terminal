@@ -5,12 +5,17 @@ alias terminaldevbuild="echo 'Building Dev Fedora container'; \
                         sudo docker build -t terminal:latest -f Dockerfile ."
 alias devterminal="echo 'Starting Dev container'; \
                    sudo docker run -ti --rm \
-		              -p 1313:1313 \
-			      -e SITE_NAME=terminalGetApi \
-			      -v ${PWD}:/app \
-			      terminal:latest sh"
+		               -p 1313:1313 \
+			       -e SITE_NAME=terminalGetApi \
+			       -v ${PWD}:/app \
+			       terminal:latest sh"
 alias terminalrun="echo 'Running App container'; \
                    sudo docker run --rm \
 		              -e SITE_NAME=terminalGetApi \
 			      -p 1313:1313 \
 			      terminal:latest"
+alias terminalconvert="echo 'Converting XLSX'; \
+                   sudo docker run --rm \
+			       -v ${PWD}:/app \
+			       terminal:latest \
+			         libreoffice --headless --convert-to csv --outdir /app/ sample-data.xlsx"
